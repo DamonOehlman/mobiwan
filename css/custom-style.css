@@ -1,0 +1,10 @@
+#logo {
+    padding: 10px 20px;
+    font: bold 1.2em Arial;
+}
+
+@media screen and (min-width: 701px) {
+    ul.nav {
+        margin-left: 140px;
+    }
+}

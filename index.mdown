@@ -1,0 +1,6 @@
+---
+layout: default
+title:  Cross Platform Mobile Development Resources
+---
+
+Cross-platform mobile development is starting to come of age, however, resources for making the transition from web development to mobile web development are still fairly sparse.
