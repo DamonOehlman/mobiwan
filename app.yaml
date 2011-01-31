@@ -12,10 +12,14 @@ handlers:
   static_files: _site/category/\1index.html
   upload: _site/category/(.*/?)index.html
   
-- url: /(.*/)
-  static_files: _site/\1index.html
-  upload: _site/(.*/)index.html
-  
 - url: /
   static_files: _site/index.html
-  upload: _site/index.html
+  upload: _site/index.html  
+  
+- url: /(.*/)
+  static_files: _site/\1index.html
+  upload: _site/(.*/)index.html  
+  
+- url: /(.*/?)
+  static_files: _site/\1/index.html
+  upload: _site/(.*/?)index.html

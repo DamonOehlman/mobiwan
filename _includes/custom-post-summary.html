@@ -1,0 +1,4 @@
+<div class="post summary">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<p class="excerpt">{{ post.content | strip_html | truncatewords:50 }}</p>
+</div>

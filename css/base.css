@@ -248,19 +248,24 @@ footer {
     font: 0.85em Arial;
     text-align: center;
     clear: both;
-    position: fixed;
     padding: 10px 0 0 0;
-    bottom: 0px;
     width: 100%;
 }
 
 #main p {
     line-height: 1.6em;
-    text-align: justify;
 }
 
-p, h2, h3 {
-    margin: 8px 15px;
+p, h2, h3, table {
+    margin: 12px 15px;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+ul li {
+    margin: 4px 0;
 }
 
 h1 {
@@ -361,15 +366,10 @@ ul.nav li a:hover {
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
     #main p {
-        text-align: justify;
         line-height: 1.3em;
         font-size: 0.88em;
     }    
     
-     footer {
-         position: relative;
-     }
-
 
  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
     j.mp/textsizeadjust 
