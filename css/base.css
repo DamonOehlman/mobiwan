@@ -230,18 +230,8 @@ html {
  
 body {
  font: 1.0em Arial;
- background: #333;
  margin: 0;
  min-height: 100%;
- color: white;
-}
-
-a, a:visited {
-    color: #5df;
-}
-
-a:hover {
-    color: #d8d8d8;
 }
 
 footer {
@@ -257,7 +247,7 @@ footer {
 }
 
 p, h2, h3, table {
-    margin: 12px 15px;
+    margin: 12px 10px;
 }
 
 ul {
@@ -271,13 +261,9 @@ ul li {
 h1 {
  font: bolder 1.2em Arial;
  margin: 12px 0 15px;
- padding: 6px 15px;
+ padding: 6px 10px;
  letter-spacing: 1px;
- text-shadow: #bbb 0.1em 0.1em 0px;
  border-top: 1px solid #999;
- background: #888;
- color: black;
- -webkit-box-shadow: black 0 1px 2px;
 }
 
 h2, h3 {
@@ -286,9 +272,7 @@ h2, h3 {
 
 a.button {
     padding: 5px 10px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#555));
     -webkit-border-radius: 5px;
-    color: white;
 }
 
 a.button:active {
@@ -296,19 +280,12 @@ a.button:active {
 }
 
 #topdrop {
-    background: black;
     height: 50px;
     margin: -5px 10px 0 10px;
-    padding: 14px 0 0 0;
+    padding: 10px 0 0 0;
     -webkit-border-radius: 0 0 8px 8px;
-    -webkit-box-shadow: inset #888 0 0 2px;
     overflow: hidden;
-    -webkit-transition: height 1s ease-in-out;
-}
-
-#topdrop.dropped {
-    height: 200px;
-    overflow: normal;
+    -webkit-transition: height 0.5s ease-in-out;
 }
 
 #topdrop.dropped ul.nav {
@@ -320,14 +297,15 @@ a.button:active {
 }
 
 #togglenav {
-    float: right;
-    margin: 5px 10px 0 0;
+    position: absolute;
+    top: 0px;
+    right: 20px;
     display: none;
 }
 
 ul.nav {
  list-style-type: none;
- margin: 2px 0 0 10px;
+ margin: 2px 0 0 0;
  padding: 0 10px;
  clear: right;
 }
@@ -335,7 +313,6 @@ ul.nav {
 ul.nav li a {
  -webkit-border-radius: 4px;
  -moz-border-radius: 4px;
- background: #222;
  margin: 5px 5px 0 0;
  padding: 6px 10px;
  display: block;
@@ -344,7 +321,6 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
- background: #333;
 }
 
 /*
@@ -352,9 +328,10 @@ ul.nav li a:hover {
  * These follow after primary styles so they will successfully override. 
  */
 
-@media all and (orientation:portrait) { 
-  /* Style adjustments for portrait mode goes here */
-  
+@media all and (orientation:portrait) and (max-device-width: 480px) { 
+    img {
+        max-width: 300px;
+    }
 }
 
 @media all and (orientation:landscape) { 
@@ -378,13 +355,18 @@ ul.nav li a:hover {
    
 @media screen and (max-width: 700px) {
   ul.nav {
-      margin: 50px 0 10px 0;
+      clear: both;
   }
   
   ul.nav li a {
    float: none;
    margin: 7px 0 0 0;
-  }  
+  }
+  
+  #topdrop.dropped {
+      height: 200px;
+      overflow: normal;
+  }
   
   #togglenav {
       display: block;

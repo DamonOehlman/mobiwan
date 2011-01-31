@@ -1,5 +1,6 @@
 title: Your Site Title
 description: Your Site Description
-
+theme: dark
+ga-code: UA-xxxxxx-x
 scripts:
     - js/script.js

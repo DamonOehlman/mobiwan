@@ -1,4 +1,4 @@
-XPMOBI = (function() {
+MOBIWAN = (function() {
     
     var supportsTouch = 'ontouchstart' in window;
     
