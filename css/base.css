@@ -230,7 +230,7 @@ html {
  
 body {
  font: 1.0em Arial;
- margin: 0;
+ margin: 0 auto;
  min-height: 100%;
 }
 
@@ -263,7 +263,6 @@ h1 {
  margin: 12px 0 15px;
  padding: 6px 10px;
  letter-spacing: 1px;
- border-top: 1px solid #999;
 }
 
 h2, h3 {
@@ -273,6 +272,8 @@ h2, h3 {
 a.button {
     padding: 5px 10px;
     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 a.button:active {
@@ -280,12 +281,14 @@ a.button:active {
 }
 
 #topdrop {
-    height: 50px;
+    height: 85px;
     margin: -5px 10px 0 10px;
     padding: 10px 0 0 0;
     -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
     overflow: hidden;
-    -webkit-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.3s ease-out;
 }
 
 #topdrop.dropped ul.nav {
@@ -297,22 +300,26 @@ a.button:active {
 }
 
 #togglenav {
-    position: absolute;
-    top: 0px;
-    right: 20px;
+    border: 0;
+    padding: 5px 10px;
+    margin: 0 2%;
+    width: 96%;
+    clear: both;
     display: none;
+    text-align: left;
 }
 
 ul.nav {
  list-style-type: none;
  margin: 2px 0 0 0;
- padding: 0 10px;
+ padding: 0 2%;
  clear: right;
 }
 
 ul.nav li a {
  -webkit-border-radius: 4px;
  -moz-border-radius: 4px;
+ border-radius: 4px;
  margin: 5px 5px 0 0;
  padding: 6px 10px;
  display: block;
