@@ -300,21 +300,17 @@ a.button:active {
 }
 
 #togglenav {
-    border: 0;
-    padding: 5px 10px;
-    margin: 0 2%;
-    width: 96%;
+    margin: 0 10px;
+    padding: 5px 8px;
     clear: both;
     display: none;
-    text-align: left;
 }
 
 #togglenav::after {
-    content: '\25B8';
-    position: absolute;
-    right: 35px;
-    font: bolder 1em Arial;
+    content: '\25B6';
+    float: right;
     text-align: right;
+    margin-top: -1px;
     -webkit-transition: all 1s ease-out;
 }
 
@@ -326,7 +322,7 @@ a.button:active {
 ul.nav {
  list-style-type: none;
  margin: 2px 0 0 0;
- padding: 0 2%;
+ padding: 0 10px;
  clear: right;
 }
 

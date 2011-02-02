@@ -7,6 +7,7 @@ MOBIWAN = (function() {
     function init() {
         $('#togglenav').click(function() {
             $('#topdrop').toggleClass('dropped');
+            return false;
         });
         
         window.scrollTo(0,1);
