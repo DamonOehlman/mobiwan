@@ -309,6 +309,20 @@ a.button:active {
     text-align: left;
 }
 
+#togglenav::after {
+    content: '\25B8';
+    position: absolute;
+    right: 35px;
+    font: bolder 1em Arial;
+    text-align: right;
+    -webkit-transition: all 1s ease-out;
+}
+
+#topdrop.dropped #togglenav::after {
+    -webkit-transform: rotate(90deg);
+    -webkit-transition: all 1s ease-out;
+}
+
 ul.nav {
  list-style-type: none;
  margin: 2px 0 0 0;
